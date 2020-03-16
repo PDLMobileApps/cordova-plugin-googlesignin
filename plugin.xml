@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-googlesignin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-googlesignin</name>
+    <description>Google Signin SDK used for Social Sign in/up and required by the Gigya SDK (it replaces the deprecated Googleplus)</description>
+    <license></license>
+    <preference name="REVERSED_CLIENT_ID" />
+    <platform name="ios">
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods>
+                <!-- <pod name="GoogleSignIn" podspec="https://github.com/CocoaPods/Specs/blob/master/Specs/d/4/0/GoogleSignIn/4.4.0/GoogleSignIn.podspec" /> -->
+                <pod name="GoogleSignIn" spec="~> 4.4.0" />
+            </pods>
+        </podspec>
+        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+            <array>
+                <dict>
+                <key>CFBundleURLSchemes</key>
+                <array>
+                    <string>$REVERSED_CLIENT_ID</string>
+                </array>
+                </dict>
+            </array>
+        </config-file>
+    </platform>
+</plugin>

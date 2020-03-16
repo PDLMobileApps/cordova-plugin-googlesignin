@@ -1,0 +1,16 @@
+{
+    "name": "cordova-plugin-googlesignin",
+    "version": "0.0.1",
+    "description": "Google Signin SDK replacement of deprecated Googleplus",
+    "cordova": {
+      "id": "cordova-plugin-googlesignin",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "keywords": [
+        "Google",
+        "Google Signin"
+    ],
+    "author": ""  
+  }  
