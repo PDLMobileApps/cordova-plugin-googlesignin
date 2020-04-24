@@ -11,7 +11,7 @@
             </config>
             <pods>
                 <!-- <pod name="GoogleSignIn" podspec="https://github.com/CocoaPods/Specs/blob/master/Specs/d/4/0/GoogleSignIn/4.4.0/GoogleSignIn.podspec" /> -->
-                <pod name="GoogleSignIn" spec="~> 4.4.0" />
+                <pod name="GoogleSignIn" spec="~> 5.0.2" />
             </pods>
         </podspec>
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
